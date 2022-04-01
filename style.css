@@ -10,6 +10,12 @@ body {
     background-color: var(--light);
 }
 
+.card-container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
 .card {
     padding: 10px;
     margin: 10px;
