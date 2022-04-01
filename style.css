@@ -44,12 +44,25 @@ p {
     font-size: 1.0rem;
 }
 
-@media only screen and (max-width: 600px) {
+.container {
+    display: flex;
+    list-style-type: none; 
+    justify-content:space-between
+}
+
+.container li {  
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
     p {
         display: none;
     }
     p.species, p.fav-foods, p.birth-year {
         display: block;
+    }
+    .container {
+        flex-wrap: wrap;
     }
 }
 
