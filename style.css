@@ -6,6 +6,27 @@
     --camel: #D8A47F;
 }
 
+@media (prefers-color-scheme: dark) {
+    h1, 
+    h2, 
+    h3,
+    p,
+    div {
+        color: white;
+    }
+    h1,
+    h2,
+    h3,
+    p,
+    div {
+        background-color: black;
+    }
+    :root {
+            --light:#272932;
+            --dark: #E7ECEF;
+    }
+}
+
 html {
     font-size: 100%;
 }
