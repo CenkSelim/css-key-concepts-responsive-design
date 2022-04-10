@@ -51,11 +51,11 @@ p {
 }
 
 .container li {  
-    padding: 10px;
+    padding: 0.3rem;
 }
 
 @media screen and (max-width: 600px) {
-    p {
+    .is-hidden-mobile {
         display: none;
     }
     p.species, p.fav-foods, p.birth-year {
@@ -63,6 +63,9 @@ p {
     }
     .container {
         flex-wrap: wrap;
+    }
+    .card-container div {
+        width: 100%;
     }
 }
 
@@ -74,6 +77,10 @@ p {
     p {
         font-size: 1.15rem;
     }
+
+    .card-container div {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -84,6 +91,10 @@ p {
     p {
         font-size: 1.25rem;
     }
+
+    .card-container div {
+        width: 30%;
+    }
 }
 
 .card-container {
@@ -92,7 +103,13 @@ p {
     flex-wrap: wrap;
 }
 
+.card-container div {
+    width: 50%;
+    margin: auto;
+}
+
 .card {
+    flex: 0 1 20%;
     padding: 10px;
     margin: 10px;
 }
